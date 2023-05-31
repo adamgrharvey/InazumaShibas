@@ -53,14 +53,10 @@ export default function Dogs(props) {
           className="mySwiper2"
         >
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/231020437_10162461944164616_393692553189869963.jpg/:/rs=w:719,h:959" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={aya1} />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6643.jpg/:/rs=w:1280,h:854" />
           </SwiperSlide>
+
+
           <SwiperSlide>
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6630.jpg/:/rs=w:1280,h:854" />
           </SwiperSlide>
@@ -71,7 +67,7 @@ export default function Dogs(props) {
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/115892600_10161246907424616_498738289950457989.jpg/:/rs=w:719,h:959" />
+            <img src={aya1} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={aya3} />
@@ -92,12 +88,6 @@ export default function Dogs(props) {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/231020437_10162461944164616_393692553189869963.jpg/:/rs=w:719,h:959" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={aya1} />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6643.jpg/:/rs=w:1280,h:854" />
           </SwiperSlide>
           <SwiperSlide>
@@ -110,7 +100,7 @@ export default function Dogs(props) {
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/115892600_10161246907424616_498738289950457989.jpg/:/rs=w:719,h:959" />
+            <img src={aya1} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={aya3} />
