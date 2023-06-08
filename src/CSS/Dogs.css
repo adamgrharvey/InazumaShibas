@@ -125,7 +125,7 @@ body {
     top: -10%;
   }
   .AyaPicSwiper {
-    width: 55%;
+    width: 984px;
     height: 400px;
   }
 }
@@ -135,7 +135,7 @@ body {
     max-width: 15rem;
   }
   .AyaPicSwiper {
-    width: 55%;
+    width: 1160px;
     height: 600px;
   }
 }
@@ -146,7 +146,7 @@ body {
     top: 0;
   }
   .AyaPicSwiper {
-    width: 55%;
+    width: 1280px;
     height: 600px;
   }
 }

@@ -81,7 +81,7 @@ export default function Dogs(props) {
           loop={true}
           lazy={true}
           spaceBetween={10}
-          slidesPerView={'auto'}
+          slidesPerView={4}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
