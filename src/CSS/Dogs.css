@@ -1,5 +1,5 @@
 .AyaProfile {
-  max-width: 18rem;
+  max-width: 22rem;
   position: relative;
   top: -10%;
 }
@@ -99,7 +99,7 @@ body {
 
 @media (max-width: 520px) {
   .AyaProfile {
-    max-width: 6rem;
+    max-width: 9rem;
     top: -40%;
   }
   .AyaPicSwiper {
@@ -110,7 +110,7 @@ body {
 
 @media (min-width: 521px) and (max-width: 820px) {
   .AyaProfile {
-    max-width: 9rem;
+    max-width: 12rem;
     top: -25%;
   }
   .AyaPicSwiper {
@@ -121,32 +121,32 @@ body {
 
 @media (min-width: 821px) and (max-width: 1123px) {
   .AyaProfile {
-    max-width: 12rem;
+    max-width: 15rem;
     top: -10%;
   }
   .AyaPicSwiper {
-    width: 984px;
+    width: 604px;
     height: 400px;
   }
 }
 
 @media (min-width: 1124px) and (max-width: 1423px) {
   .AyaProfile {
-    max-width: 15rem;
+    max-width: 18rem;
   }
   .AyaPicSwiper {
-    width: 1160px;
+    width: 780px;
     height: 600px;
   }
 }
 
 @media (min-width: 1424px) {
   .AyaProfile {
-    max-width: 18rem;
+    max-width: 22rem;
     top: 0;
   }
   .AyaPicSwiper {
-    width: 1280px;
+    width: 900px;
     height: 600px;
   }
 }
