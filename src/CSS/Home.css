@@ -6,7 +6,20 @@
   position: relative;
   width: 90%;
   opacity: 0.55;
-  filter: saturate(0);
+  animation: photoColor ease-in 2.3s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes photoColor {
+  from {
+    filter: saturate(0);
+  }
+
+  to {
+    filter: saturate(1.2);
+  }
 }
 
 .Home {
