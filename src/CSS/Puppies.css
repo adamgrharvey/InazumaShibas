@@ -1,10 +1,10 @@
-.AyaProfile {
+.AyaProfilePuppies {
   max-width: 22rem;
   position: relative;
   top: -10%;
 }
 
-.AyaPicSwiper {
+.PuppyPicSwiper {
   width: 60%;
   height: 600px;
 }
@@ -99,54 +99,54 @@ body {
 
 
 @media (max-width: 520px) {
-  .AyaProfile {
-    max-width: 9rem;
+  .AyaProfilePuppies {
+    max-width: 8rem;
     top: -40%;
   }
-  .AyaPicSwiper {
+  .PuppyPicSwiper {
     width: 90%;
     height: 420px;
   }
 }
 
 @media (min-width: 521px) and (max-width: 820px) {
-  .AyaProfile {
-    max-width: 12rem;
+  .AyaProfilePuppies {
+    max-width: 11rem;
     top: -25%;
   }
-  .AyaPicSwiper {
+  .PuppyPicSwiper {
     width: 70%;
     height: 410px;
   }
 }
 
 @media (min-width: 821px) and (max-width: 1123px) {
-  .AyaProfile {
-    max-width: 15rem;
+  .AyaProfilePuppies {
+    max-width: 14rem;
     top: -10%;
   }
-  .AyaPicSwiper {
+  .PuppyPicSwiper {
     width: 429px;
     height: 572px;
   }
 }
 
 @media (min-width: 1124px) and (max-width: 1423px) {
-  .AyaProfile {
-    max-width: 18rem;
+  .AyaProfilePuppies {
+    max-width: 16rem;
   }
-  .AyaPicSwiper {
+  .PuppyPicSwiper {
     width: 429px;
     height: 572px;
   }
 }
 
 @media (min-width: 1424px) {
-  .AyaProfile {
-    max-width: 22rem;
+  .AyaProfilePuppies {
+    max-width: 18rem;
     top: 0;
   }
-  .AyaPicSwiper {
+  .PuppyPicSwiper {
     width: 562px;
     height: 750px;
   }

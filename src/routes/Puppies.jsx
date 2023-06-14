@@ -1,11 +1,9 @@
 import '../CSS/Puppies.css';
-import ayaprofile from "../images/aya-profile-crop.webp";
-import aya1 from "../images/aya1.webp"
-import aya2 from "../images/aya2.webp"
-import aya3 from "../images/aya3.webp"
-import aya4 from "../images/aya4.webp"
+import AyaProfilePuppies from "../images/aya-profile-crop.webp";
+
 
 import React, { useRef, useState } from "react";
+import { ContactUs } from '../components/ContactUs';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -33,16 +31,16 @@ export default function Puppies(props) {
     <>
       <div className='w-3/5 flex flex-row mt-6'>
         <div className='max-h-max ml-3 mr-3 flex items-center'>
-          <img className='rounded-full AyaProfile' src={ayaprofile}></img>
+          <img className='rounded-full AyaProfilePuppies' src={AyaProfilePuppies}></img>
         </div>
         <div className="ml-3 mr-3">
           <p className='font-bold text-2xl'>Aya</p>
-          <p className='mt-10 text-lg'>Aya gave birth to her 2nd litter on May 7th, 2023. Two puppies; a girl and a boy. </p>
-          <p className="mt-10 text-lg">We are currently accepting applications for this litter. Please email us, and we </p>
+          <p className='mt-10 text-lg'>Aya had her 2nd litter on May 7th, 2023. Two puppies; a girl and a boy. </p>
+          <p className="mt-10 text-lg">We are currently accepting applications for this litter. Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
 
         </div>
       </div>
-      <div className='mt-5 AyaPicSwiper'>
+      <div className='mt-5 PuppyPicSwiper'>
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -53,7 +51,6 @@ export default function Puppies(props) {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          lazy={true}
           spaceBetween={10}
           slidesPerView={1}
           navigation={true}
@@ -118,7 +115,6 @@ export default function Puppies(props) {
         <Swiper
           onSwiper={setThumbsSwiper}
           loop={true}
-          lazy={true}
           spaceBetween={10}
           slidesPerView={6}
           freeMode={true}
@@ -180,6 +176,7 @@ export default function Puppies(props) {
 
         </Swiper>
       </div>
+      <ContactUs />
 
     </>
   )
