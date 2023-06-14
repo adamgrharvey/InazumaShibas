@@ -23,7 +23,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className='mb-10'>
+    <div className='pb-10'>
       <div className='ContactUsTitle'>
         <p>Contact Us</p>
       </div>

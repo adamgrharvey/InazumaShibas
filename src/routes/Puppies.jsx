@@ -29,8 +29,8 @@ export default function Puppies(props) {
 
   return (
     <>
-      <div className='w-3/5 flex flex-row mt-6'>
-        <div className='max-h-max ml-3 mr-3 flex items-center'>
+      <div className='w-3/5 flex flex-row mt-6 pictext'>
+        <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
           <img className='rounded-full AyaProfilePuppies' src={AyaProfilePuppies}></img>
         </div>
         <div className="ml-3 mr-3">
