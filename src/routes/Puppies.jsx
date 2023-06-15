@@ -27,6 +27,8 @@ export default function Puppies(props) {
 
   const images = importAll(require.context('../images/puppies', false, /\.(png|jpe?g|svg)$/));
 
+
+
   return (
     <>
       <div className='w-3/5 flex flex-row mt-6 pictext'>
@@ -35,8 +37,8 @@ export default function Puppies(props) {
         </div>
         <div className="ml-3 mr-3">
           <p className='font-bold text-2xl'>Aya</p>
-          <p className='mt-10 text-lg'>Aya had her 2nd litter on May 7th, 2023. Two puppies; a girl and a boy. </p>
-          <p className="mt-10 text-lg">We are currently accepting applications for this litter. Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
+          <p className='mt-4 text-lg'>Aya had her 2nd litter on May 7th, 2023. Two puppies; a girl and a boy. </p>
+          <p className="mt-4 text-lg">We are currently accepting applications for this litter. Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
 
         </div>
       </div>

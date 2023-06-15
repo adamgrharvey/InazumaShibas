@@ -48,7 +48,6 @@ export default function Dogs(props) {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          lazy={true}
           spaceBetween={10}
           slidesPerView={1}
           navigation={true}
@@ -82,7 +81,6 @@ export default function Dogs(props) {
         <Swiper
           onSwiper={setThumbsSwiper}
           loop={true}
-          lazy={true}
           spaceBetween={10}
           slidesPerView={4}
           freeMode={true}
