@@ -4,6 +4,12 @@ import aya1 from "../images/aya1.webp"
 import aya2 from "../images/aya2.webp"
 import aya3 from "../images/aya3.webp"
 import aya4 from "../images/aya4.webp"
+import a1 from "../images/aya/1.webp"
+import a2 from "../images/aya/2.webp"
+import a3 from "../images/aya/3.webp"
+import a4 from "../images/aya/4.webp"
+import a5 from "../images/aya/5.webp"
+import a6 from "../images/aya/6.webp"
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -56,58 +62,58 @@ export default function Dogs(props) {
           className="mySwiper2"
         >
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6643.jpg/:/rs=w:1280,h:854" />
+            <img src={a1} />
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6630.jpg/:/rs=w:1280,h:854" />
+            <img src={a2} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6615.jpg/:/rs=w:1280,h:1921" />
+            <img src={a3} />
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={aya1} />
+            <img src={a4} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={aya3} />
+            <img src={a5} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={aya2} />
+            <img src={a6} />
           </SwiperSlide>
         </Swiper>
         <Swiper
           onSwiper={setThumbsSwiper}
           loop={true}
           spaceBetween={10}
-          slidesPerView={4}
+          slidesPerView={6}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6643.jpg/:/rs=w:1280,h:854" />
+            <img src={a1} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6630.jpg/:/rs=w:1280,h:854" />
+            <img src={a2} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/IMG_6615.jpg/:/rs=w:1280,h:1921" />
+            <img src={a3} />
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={aya1} />
+            <img src={a4} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={aya3} />
+            <img src={a5} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={aya2} />
+            <img src={a6} />
           </SwiperSlide>
         </Swiper>
       </div>
