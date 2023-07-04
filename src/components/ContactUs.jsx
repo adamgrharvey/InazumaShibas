@@ -9,15 +9,14 @@ export const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
-    setSent(true);
-
     emailjs.sendForm('service_q4ro3kx', 'template_l7rktms', form.current, 'yZAOd6x8Faw9IXyWj')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
+      e.target.reset();
+      setSent(true);
 
 
   };
