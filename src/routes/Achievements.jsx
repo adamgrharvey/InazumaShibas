@@ -28,8 +28,8 @@ export default function Achievements(props) {
 
   return (
     <>
-      <div className='w-3/5 flex flex-row mt-6 fadeInPage'>
-        <div className='max-h-max ml-3 mr-3 flex items-center'>
+      <div className='w-3/5 flex flex-row mt-6 pictext fadeInPage'>
+        <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
           <img className='rounded-full AyaProfile' src={ayaprofile}></img>
         </div>
         <div className="ml-3 mr-3">
