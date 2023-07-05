@@ -32,7 +32,7 @@ export default function Dogs(props) {
 
   return (
     <>
-      <div className='w-3/5 flex flex-row mt-6'>
+      <div className='w-3/5 flex flex-row mt-6 fadeInPage'>
         <div className='max-h-max ml-3 mr-3 flex items-center'>
           <img className='rounded-full AyaProfile' src={ayaprofile}></img>
         </div>
@@ -43,7 +43,7 @@ export default function Dogs(props) {
           <p className="mt-4 text-lg">Aya finished her Championship in only one month of showing with group placings. She went on to attain Grand Champion status at 18 months old.</p>
         </div>
       </div>
-      <div className='mt-5 AyaPicSwiper'>
+      <div className='mt-5 AyaPicSwiper fadeInPage'>
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",

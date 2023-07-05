@@ -22,7 +22,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className='pb-10'>
+    <div className='pb-10 fadeInPage'>
       <div className='ContactUsTitle'>
         <p>Contact Us</p>
       </div>

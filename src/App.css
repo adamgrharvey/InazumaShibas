@@ -28,14 +28,14 @@
 .button {
   border: none;
   color: white;
-  padding: 12px 12px;
   margin: 16px;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.7rem;
-  white-space:nowrap;
+  white-space: nowrap;
   transition: 0.3s;
 }
 
@@ -46,17 +46,57 @@
 .button-selected {
   border: none;
   color: #702cc4;
-  padding: 12px 12px;
   margin: 16px;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.7rem;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
+.Hamburger {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  position: fixed;
+  margin-right: 4%;
+  margin-top: 4%;
+  top: 5px;
+  right: -5px;
+  z-index: 101;
+}
 
+.fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.fadeIn {
+  opacity: 1;
+  background: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  text-align: left;
+  z-index: 100;
+  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+}
+
+.Links {
+  width: min-content;
+  text-align: left;
+  color: white !important;
+}
 
 .App-header {
   background-color: #282c34;
@@ -77,6 +117,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -84,38 +125,52 @@
 
 @media (max-width: 520px) {
   .button {
-    padding: 12px 6px;
     margin: 2px;
-    font-size: 1.1rem;
+    padding: 6px;
+    font-size: 2.5rem;
+    text-overflow: none;
+  }
+
+  .button-selected {
+    margin: 2px;
+    padding: 6px;
+    font-size: 2.5rem;
     text-overflow: none;
   }
 }
 
-@media (min-width: 521px) and (max-width: 820px) {
+@media (min-width: 521px) and (max-width: 724px) {
   .button {
-    padding: 12px 8px;
     margin: 4px;
-    font-size: 1.4rem;
+    padding: 6px;
+    font-size: 2.5rem;
+    text-overflow: none;
+  }
+
+  .button-selected {
+    margin: 4px;
+    padding: 6px;
+    font-size: 2.5rem;
     text-overflow: none;
   }
 
 }
 
-@media (min-width: 821px) and (max-width: 1123px) {
+@media (min-width: 725px) and (max-width: 1123px) {
   .button {
-    padding: 12px 10px;
     margin: 7px;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    text-overflow: none;
+  }
+
+  .button-selected {
+    margin: 7px;
+    font-size: 1.2rem;
     text-overflow: none;
   }
 
 }
 
-@media (min-width: 1124px) and (max-width: 1423px) {
+@media (min-width: 1124px) and (max-width: 1423px) {}
 
-}
-
-@media (min-width: 1424px) {
-
-
-}
+@media (min-width: 1424px) {}

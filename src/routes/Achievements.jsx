@@ -28,7 +28,7 @@ export default function Achievements(props) {
 
   return (
     <>
-      <div className='w-3/5 flex flex-row mt-6'>
+      <div className='w-3/5 flex flex-row mt-6 fadeInPage'>
         <div className='max-h-max ml-3 mr-3 flex items-center'>
           <img className='rounded-full AyaProfile' src={ayaprofile}></img>
         </div>
@@ -41,7 +41,7 @@ export default function Achievements(props) {
         </div>
       </div>
 
-      <div className='mt-5 AchPicSwiper'>
+      <div className='mt-5 AchPicSwiper fadeInPage'>
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",

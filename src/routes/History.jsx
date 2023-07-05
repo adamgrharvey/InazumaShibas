@@ -4,8 +4,8 @@ export default function History(props) {
 
   return (
     <>
-      <img className='ml-5 mr-5 AyaPic' src={aya_about}></img>
-      <div className="HomeText">
+      <img className='ml-5 mr-5 AyaPic fadeInPage' src={aya_about}></img>
+      <div className="HomeText fadeInPage">
         <p className='font-bold text-3xl mb-4 underline'>Breed Description</p>
         <p className='font-bold text-2xl mt-5'>Origin and Purpose</p>
         <div><p>  The Shiba was developed in Japan, and is the smallest of the native Japanese breeds. Developed as a hunting dog for boar, rabbit, grouse and other small game in dense undergrowth, the Shiba needed strength, agility and a coarse thick coat, as well as courage and tenacity. While still retaining these hunting skills, the Shiba is now primarily an excellent companion. </p>
