@@ -109,6 +109,7 @@ body {
   }
   .pictext {
     flex-direction: column !important;
+    width: 87%;
   }
 }
 
@@ -123,6 +124,7 @@ body {
   }
   .pictext {
     flex-direction: column !important;
+    width: 87%;
   }
 }
 
@@ -135,6 +137,9 @@ body {
     width: 429px;
     height: 572px;
   }
+  .pictext {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1124px) and (max-width: 1423px) {
@@ -144,6 +149,9 @@ body {
   .PuppyPicSwiper {
     width: 429px;
     height: 572px;
+  }
+  .pictext {
+    width: 75%;
   }
 }
 
@@ -155,5 +163,8 @@ body {
   .PuppyPicSwiper {
     width: 562px;
     height: 750px;
+  }
+  .pictext {
+    width: 75%;
   }
 }

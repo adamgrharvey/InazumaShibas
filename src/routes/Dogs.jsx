@@ -32,7 +32,7 @@ export default function Dogs(props) {
 
   return (
     <>
-      <div className='w-3/5 flex flex-row mt-6 pictext fadeInPage'>
+      <div className='flex flex-row mt-6 pictext fadeInPage'>
         <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
           <img className='rounded-full AyaProfile' src={ayaprofile}></img>
         </div>
