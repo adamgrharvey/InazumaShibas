@@ -10,8 +10,8 @@ import a3 from "../images/aya/3.webp"
 import a4 from "../images/aya/4.webp"
 import a5 from "../images/aya/5.webp"
 import a6 from "../images/aya/6.webp"
-
-import React, { useRef, useState } from "react";
+import LightningBolt from '../components/LightningBolt';
+import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -30,92 +30,121 @@ export default function Dogs(props) {
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  return (
-    <>
-      <div className='flex flex-row mt-6 pictext fadeInPage'>
-        <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
-          <img className='rounded-full AyaProfile' src={ayaprofile}></img>
+  const [isLoading, setIsLoading] = useState(true);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Loading function to load data or 
+    // fake it using setTimeout;
+    const loadData = async () => {
+      setCount(0);
+      // Wait for two second
+      const timer = setInterval(() => {
+        setCount(prev => prev + 1);
+      }, 45)
+
+      await new Promise((r) => setTimeout(r, 2200));
+      // Toggle loading state
+      setIsLoading(false);
+      clearInterval(timer);
+    };
+
+    loadData();
+  }, [])
+
+  if (isLoading) {
+    return (
+      <LightningBolt />
+    )
+  } else {
+
+    return (
+      <>
+        <div className='flex flex-row mt-6 pictext fadeInPage'>
+          <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
+            <img className='rounded-full AyaProfile' src={ayaprofile}></img>
+          </div>
+          <div className="ml-3 mr-3">
+            <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
+            <p className='mt-4 text-lg'>Our lovely girl comes from a long line of Shiba Inu's that were imported from Japan. The co-owner of this beautiful girl, Susan Norris-Jones from Sunojo kennels, has been breeding Shiba's since 1985. We are extremely fortunate to have Susan as our mentor in this remarkable breed.</p>
+            <p className="mt-4 text-lg">Aya is a very elegant and spunky girl. She loves learning new tricks and is eager to impress, however her greatest joy in life is to argue back and to make sure her opinion is heard. She is our foundation bitch and we can't wait to see what she holds for us in the future.</p>
+            <p className="mt-4 text-lg">Aya finished her Championship in only one month of showing with group placings. She went on to attain Grand Champion status at 18 months old.</p>
+          </div>
         </div>
-        <div className="ml-3 mr-3">
-          <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
-          <p className='mt-4 text-lg'>Our lovely girl comes from a long line of Shiba Inu's that were imported from Japan. The co-owner of this beautiful girl, Susan Norris-Jones from Sunojo kennels, has been breeding Shiba's since 1985. We are extremely fortunate to have Susan as our mentor in this remarkable breed.</p>
-          <p className="mt-4 text-lg">Aya is a very elegant and spunky girl. She loves learning new tricks and is eager to impress, however her greatest joy in life is to argue back and to make sure her opinion is heard. She is our foundation bitch and we can't wait to see what she holds for us in the future.</p>
-          <p className="mt-4 text-lg">Aya finished her Championship in only one month of showing with group placings. She went on to attain Grand Champion status at 18 months old.</p>
+        <div className='mt-5 AyaPicSwiper fadeInPage'>
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            spaceBetween={10}
+            slidesPerView={1}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+            modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
+            className="mySwiper2"
+          >
+            <SwiperSlide>
+              <img src={a1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a5} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a6} />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            loop={true}
+            spaceBetween={10}
+            slidesPerView={6}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={a1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a5} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={a6} />
+            </SwiperSlide>
+          </Swiper>
         </div>
-      </div>
-      <div className='mt-5 AyaPicSwiper fadeInPage'>
-        <Swiper
-          style={{
-            "--swiper-navigation-color": "#fff",
-            "--swiper-pagination-color": "#fff",
-          }}
-          loop={true}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
-          spaceBetween={10}
-          slidesPerView={1}
-          navigation={true}
-          thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-          modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
-          className="mySwiper2"
-        >
-          <SwiperSlide>
-            <img src={a1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a4} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a5} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a6} />
-          </SwiperSlide>
-        </Swiper>
-        <Swiper
-          onSwiper={setThumbsSwiper}
-          loop={true}
-          spaceBetween={10}
-          slidesPerView={6}
-          freeMode={true}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img src={a1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a4} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a5} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={a6} />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </>
-  )
+      </>
+    )
+  }
 }
