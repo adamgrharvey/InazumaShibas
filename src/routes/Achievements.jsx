@@ -33,11 +33,12 @@ export default function Achievements(props) {
           <img className='rounded-full AyaProfile' src={ayaprofile}></img>
         </div>
         <div className="ml-3 mr-3">
-          <p className='font-bold text-2xl'>Aya (GCH Sunojo's Kaika Suru Ayame)</p>
+          <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
           <p className='mt-4 text-lg'>Our lovely girl comes from a long line of Shiba Inu's that were imported from Japan. The co-owner of this beautiful girl, Susan Norris-Jones from Sunojo kennels, has been breeding Shiba's since 1985. We are extremely fortunate to have Susan as our mentor in this remarkable breed.</p>
           <p className='mt-4 text-lg'><span className='font-bold'>Group 4th</span> | Campbell River Dog Fanciers Society | July 30 - August 1, 2021</p>
           <p className='mt-4 text-lg'><span className='font-bold'>Group 4th</span> | Glacier View | August 2 - August 4, 2021</p>
           <p className='mt-4 text-lg'><span className='font-bold'>Group 2nd</span> | Nanaimo Kennel Club | August 12 - August 15, 2021</p>
+          <p className="mt-4 text-lg">Aya finished her Championship in only one month of showing with group placings. She went on to attain Grand Champion status at 18 months old.</p>
         </div>
       </div>
 
