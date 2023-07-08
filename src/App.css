@@ -171,6 +171,30 @@
 
 }
 
-@media (min-width: 1124px) and (max-width: 1423px) {}
+@media (min-width: 1124px) and (max-width: 1423px) {
+  .button {
+    margin: 7px;
+    font-size: 1.6rem;
+    text-overflow: none;
+  }
 
-@media (min-width: 1424px) {}
+  .button-selected {
+    margin: 7px;
+    font-size: 1.6rem;
+    text-overflow: none;
+  }
+}
+
+@media (min-width: 1424px) {
+  .button {
+    margin: 7px;
+    font-size: 1.7rem;
+    text-overflow: none;
+  }
+
+  .button-selected {
+    margin: 7px;
+    font-size: 1.7rem;
+    text-overflow: none;
+  }
+}

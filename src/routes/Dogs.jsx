@@ -64,7 +64,6 @@ export default function Dogs(props) {
           <SwiperSlide>
             <img src={a1} />
           </SwiperSlide>
-
           <SwiperSlide>
             <img src={a2} />
           </SwiperSlide>
@@ -117,9 +116,6 @@ export default function Dogs(props) {
           </SwiperSlide>
         </Swiper>
       </div>
-
-
-
     </>
   )
 }
