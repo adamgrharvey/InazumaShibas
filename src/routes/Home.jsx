@@ -20,7 +20,7 @@ export default function Home(props) {
         setCount(prev => prev + 1);
       }, 45)
 
-      await new Promise((r) => setTimeout(r, 222200));
+      await new Promise((r) => setTimeout(r, 2200));
       // Toggle loading state
       setIsLoading(false);
       clearInterval(timer);
