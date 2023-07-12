@@ -8,7 +8,6 @@ import History from './routes/History';
 import Puppies from './routes/Puppies';
 import ButtonRow from './components/ButtonRow';
 
-
 function App() {
   return (
     <BrowserRouter>

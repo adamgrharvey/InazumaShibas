@@ -4,6 +4,9 @@ import ayaabout from "../images/aya-about-PhotoRoom.png-PhotoRoom.png";
 import LightningBolt from '../components/LightningBolt';
 export default function Home(props) {
 
+
+
+
   const [isLoading, setIsLoading] = useState(true);
   const [count, setCount] = useState(0);
 
