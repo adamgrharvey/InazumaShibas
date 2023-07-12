@@ -233,6 +233,7 @@
   margin: 0 auto;
   position: fixed;
   text-align: center;
+  -webkit-text-size-adjust: 100%;
 
   &:before {
     content: '';

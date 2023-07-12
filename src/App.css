@@ -28,8 +28,7 @@
 .button {
   border: none;
   color: white;
-  margin: 16px;
-  padding: 12px;
+  padding: 16px !important;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -46,7 +45,6 @@
 .button-selected {
   border: none;
   color: #702cc4;
-  margin: 16px;
   padding: 12px;
   text-align: center;
   text-decoration: none;
@@ -125,15 +123,13 @@
 
 @media (max-width: 520px) {
   .button {
-    margin: 2px;
-    padding: 6px;
+    padding: 8px;
     font-size: 2.5rem;
     text-overflow: none;
   }
 
   .button-selected {
-    margin: 2px;
-    padding: 6px;
+    padding: 8px;
     font-size: 2.5rem;
     text-overflow: none;
   }
@@ -141,15 +137,13 @@
 
 @media (min-width: 521px) and (max-width: 724px) {
   .button {
-    margin: 4px;
-    padding: 6px;
+    padding: 10px;
     font-size: 2.5rem;
     text-overflow: none;
   }
 
   .button-selected {
-    margin: 4px;
-    padding: 6px;
+    padding: 10px;
     font-size: 2.5rem;
     text-overflow: none;
   }
@@ -158,13 +152,13 @@
 
 @media (min-width: 725px) and (max-width: 1123px) {
   .button {
-    margin: 7px;
+    padding: 7px;
     font-size: 1.5rem;
     text-overflow: none;
   }
 
   .button-selected {
-    margin: 7px;
+    padding: 7px;
     font-size: 1.5rem;
     text-overflow: none;
   }
@@ -173,13 +167,13 @@
 
 @media (min-width: 1124px) and (max-width: 1423px) {
   .button {
-    margin: 7px;
+    padding: 7px;
     font-size: 1.6rem;
     text-overflow: none;
   }
 
   .button-selected {
-    margin: 7px;
+    padding: 7px;
     font-size: 1.6rem;
     text-overflow: none;
   }
@@ -187,13 +181,13 @@
 
 @media (min-width: 1424px) {
   .button {
-    margin: 7px;
+    padding: 7px;
     font-size: 1.7rem;
     text-overflow: none;
   }
 
   .button-selected {
-    margin: 7px;
+    padding: 7px;
     font-size: 1.7rem;
     text-overflow: none;
   }
