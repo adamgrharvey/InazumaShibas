@@ -1,5 +1,6 @@
 import '../CSS/Dogs.css';
 import ayaprofile from "../images/aya-profile-crop.webp";
+import kukiprofile from "../images/kuki/kukiprofile.jpg"
 import aya1 from "../images/aya1.webp"
 import aya2 from "../images/aya2.webp"
 import aya3 from "../images/aya3.webp"
@@ -29,6 +30,12 @@ import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from "swiper
 export default function Dogs(props) {
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const kukiImages = importAll(require.context('../images/kuki', false, /\.(png|jpe?g|svg)$/));
 
   const [isLoading, setIsLoading] = useState(true);
   const [count, setCount] = useState(0);
@@ -141,6 +148,125 @@ export default function Dogs(props) {
             </SwiperSlide>
             <SwiperSlide>
               <img src={a6} />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
+        <div className='flex flex-row mt-6 pictext fadeInPage'>
+          <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
+            <img className='rounded-full AyaProfile' src={kukiprofile}></img>
+          </div>
+          <div className="ml-3 mr-3">
+            <p className='font-bold text-2xl'>Kuki (Sunojo's Muscle Bunny Kuki)</p>
+            <p className='mt-4 text-lg'>Our youngest going to her first dog shows this year. She's energetic and mischievous. Looking forward to our future escapades with her!</p>
+          </div>
+        </div>
+        <div className='mt-5 AyaPicSwiper fadeInPage'>
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            spaceBetween={10}
+            slidesPerView={1}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+            modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
+            className="mySwiper2"
+          >
+            <SwiperSlide>
+              <img src={kukiImages[0]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[1]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[2]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[3]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[4]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[5]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[6]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[7]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[8]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[9]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[10]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[11]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[12]} />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            loop={true}
+            spaceBetween={10}
+            slidesPerView={6}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper"
+          >
+                        <SwiperSlide>
+              <img src={kukiImages[0]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[1]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[2]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[3]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[4]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[5]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[6]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[7]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[8]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[9]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[10]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[11]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={kukiImages[12]} />
             </SwiperSlide>
           </Swiper>
         </div>
