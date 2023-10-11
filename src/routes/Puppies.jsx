@@ -64,11 +64,11 @@ export default function Puppies(props) {
           <div className="ml-3 mr-3">
             <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
             <p className='mt-4 text-lg'>Aya had her 2nd litter on May 7th, 2023. Two puppies; a girl and a boy. </p>
-            <p className="mt-4 pl-12 pr-12 text-lg">We are currently accepting applications for this litter. Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
+            <p className="mt-4 pl-12 pr-12 text-lg">We are currently no puppies available. If interested in future litters, Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
 
           </div>
         </div>
-        <div className='mt-5 PuppyPicSwiper fadeInPage'>
+        <div className='mt-3 PuppyPicSwiper fadeInPage'>
           <Swiper
             style={{
               "--swiper-navigation-color": "#fff",
@@ -137,6 +137,42 @@ export default function Puppies(props) {
             <SwiperSlide>
               <img src={images[16]} />
             </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[17]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[18]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[19]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[20]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[21]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[22]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[23]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[24]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[25]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[26]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[27]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[28]} />
+            </SwiperSlide>
 
           </Swiper>
           <Swiper
@@ -149,6 +185,9 @@ export default function Puppies(props) {
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper"
           >
+            {images.map((image) => {
+
+            })}
             <SwiperSlide>
               <img src={images[0]} />
             </SwiperSlide>
@@ -199,6 +238,42 @@ export default function Puppies(props) {
             </SwiperSlide>
             <SwiperSlide>
               <img src={images[16]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[17]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[18]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[19]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[20]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[21]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[22]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[23]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[24]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[25]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[26]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[27]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={images[28]} />
             </SwiperSlide>
           </Swiper>
         </div>
