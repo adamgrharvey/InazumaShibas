@@ -4,6 +4,10 @@
   height: 700px;
 }
 
+.AchievementText {
+  color: #6a2bbd
+}
+
 @media (max-width: 520px) {
   .AyaProfile {
     max-width: 9rem;

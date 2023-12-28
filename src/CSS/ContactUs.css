@@ -22,10 +22,10 @@ label {
 }
 
 .submit {
-  color: white;
+  color: #6a2bbd;
   margin-top: 1rem;
-  border: 1px solid rgb(240, 240, 240);
-  border-radius: 2px;
+  border: 2px solid #6a2bbd;
+  border-radius: 4px;
   width: fit-content;
   font-size: large;
   font-family: 'Bebas Neue', sans-serif;
@@ -34,12 +34,14 @@ label {
 
 .submit:hover {
   cursor: pointer;
+  color: #793fc4;
+  border: 2px solid #793fc4;
 }
 
 .ContactUsTitle {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 4rem;
-  color: #702cc4;
+  color: #6a2bbd;
 }
 
 textarea {

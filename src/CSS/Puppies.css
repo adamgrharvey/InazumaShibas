@@ -7,6 +7,7 @@
 .PuppyPicSwiper {
   width: 60%;
   height: 600px;
+  border-radius: 5px;
 }
 
 #app {
@@ -35,12 +36,15 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
+  background-color: #d3b4fc;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  
 }
 
 .swiper-slide img {
@@ -48,11 +52,14 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: #d3b4fc;
+  user-select: none; /* Standard syntax */
+  border-radius: 5px;
 }
 
 body {
-  background: #272727;
-  color: #ffffff;
+  background: #d3b4fc;
+  color: #6a2bbd;
 }
 
 .swiper {
@@ -60,11 +67,7 @@ body {
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
+  border-radius: 5px;
 }
 
 .mySwiper2 {
@@ -82,21 +85,12 @@ body {
   width: 25%;
   height: 100%;
   opacity: 0.4;
+  border-radius: 5px;
 }
 
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  user-select: none; /* Standard syntax */
-}
-
-
 
 @media (max-width: 520px) {
   .AyaProfilePuppies {

@@ -1,5 +1,5 @@
-import '../CSS/Achievements.css';
-import ayaprofile from "../images/aya-profile-crop.webp";
+import '../CSS/Achievements.css'
+import ayaprofile from "../images/aya-profile-crop.webp"
 import aya1 from "../images/aya1.webp"
 import aya2 from "../images/aya2.webp"
 import aya3 from "../images/aya3.webp"
@@ -7,46 +7,46 @@ import ayaGC from "../images/aya_GC.jpg"
 import aya5 from "../images/aya5.jpg"
 
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react"
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/thumbs";
-import "swiper/css/zoom";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import LightningBolt from '../components/LightningBolt';
+import "swiper/css"
+import "swiper/css/free-mode"
+import "swiper/css/thumbs"
+import "swiper/css/zoom"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import LightningBolt from '../components/LightningBolt'
 
 // import required modules
-import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from "swiper";
+import { Autoplay, FreeMode, Pagination, Navigation, Thumbs } from "swiper"
 
-export default function Achievements(props) {
+export default function Achievements() {
 
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [count, setCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true)
+  const [, setCount] = useState(0)
 
   useEffect(() => {
     // Loading function to load data or 
     // fake it using setTimeout;
     const loadData = async () => {
-      setCount(0);
+      setCount(0)
       // Wait for two second
       const timer = setInterval(() => {
-        setCount(prev => prev + 1);
+        setCount(prev => prev + 1)
       }, 45)
 
-      await new Promise((r) => setTimeout(r, 2200));
+      await new Promise((r) => setTimeout(r, 2200))
       // Toggle loading state
-      setIsLoading(false);
-      clearInterval(timer);
-    };
+      setIsLoading(false)
+      clearInterval(timer)
+    }
 
-    loadData();
+    loadData()
   }, [])
 
   if (isLoading) {
@@ -59,9 +59,9 @@ export default function Achievements(props) {
       <>
         <div className='w-3/5 flex flex-row mt-6 pictext fadeInPage'>
           <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
-            <img className='rounded-full AyaProfile' src={ayaprofile}></img>
+            <img className='rounded-full AyaProfile' alt='ayaprofile' src={ayaprofile}></img>
           </div>
-          <div className="ml-3 mr-3">
+          <div className="ml-3 mr-3 AchievementText">
             <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
             <p className='mt-4 text-lg'>Our lovely girl comes from a long line of Shiba Inu's that were imported from Japan. The co-owner of this beautiful girl, Susan Norris-Jones from Sunojo kennels, has been breeding Shiba's since 1985. We are extremely fortunate to have Susan as our mentor in this remarkable breed.</p>
             <p className='mt-4 text-lg'><span className='font-bold'>Group 4th</span> | Campbell River Dog Fanciers Society | July 30 - August 1, 2021</p>
@@ -90,19 +90,19 @@ export default function Achievements(props) {
             className="mySwiper2"
           >
             <SwiperSlide>
-              <img src={ayaGC} />
+              <img alt={'ayaGC'} src={ayaGC} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya1} />
+              <img alt={'aya1'} src={aya1} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya3} />
+              <img alt={'aya3'} src={aya3} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya5} />
+              <img alt={'aya5'} src={aya5} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya2} />
+              <img alt={'aya2'} src={aya2} />
             </SwiperSlide>
           </Swiper>
           <Swiper
@@ -116,19 +116,19 @@ export default function Achievements(props) {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={ayaGC} />
+              <img alt={'ayaGC'} src={ayaGC} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya1} />
+              <img alt={'aya1'} src={aya1} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya3} />
+              <img alt={'aya3'} src={aya3} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya5} />
+              <img alt={'aya5'} src={aya5} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={aya2} />
+              <img alt={'aya2'} src={aya2} />
             </SwiperSlide>
           </Swiper>
         </div>

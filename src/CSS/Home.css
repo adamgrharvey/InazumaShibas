@@ -6,7 +6,7 @@
 .HomePhoto {
   position: relative;
   width: 90%;
-  opacity: 0.55;
+  opacity: 1;
   animation: photoColor ease-in 2.3s;
   animation-delay: 0;
   animation-iteration-count: 1;
@@ -16,10 +16,12 @@
 @keyframes photoColor {
   from {
     filter: saturate(0);
+    opacity: 0;
   }
 
   to {
-    filter: saturate(1.2);
+    filter: saturate(1);
+    opacity: 1;
   }
 }
 
@@ -33,12 +35,20 @@
 .Title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 10rem;
-  color: #702cc4;
+  color: #6a2bbd;
 }
 
-.Title1 {}
+.Title1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+  color: #6a2bbd;
+}
 
-.Title2 {}
+.Title2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 10rem;
+  color: #6a2bbd;
+}
 
 .move1 {
   position: relative;

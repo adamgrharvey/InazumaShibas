@@ -27,7 +27,7 @@
 
 .button {
   border: none;
-  color: white;
+  color: rgb(159, 85, 255);
   padding: 16px !important;
   text-align: center;
   text-decoration: none;
@@ -39,12 +39,12 @@
 }
 
 .button:hover {
-  color: #8d5bca;
+  color: #6a2bbd;
 }
 
 .button-selected {
   border: none;
-  color: #702cc4;
+  color: #6a2bbd;
   padding: 12px;
   text-align: center;
   text-decoration: none;
@@ -75,7 +75,7 @@
 
 .fadeIn {
   opacity: 1;
-  background: #272727;
+  background: #d3b4fc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,11 +93,11 @@
 .Links {
   width: min-content;
   text-align: left;
-  color: white !important;
+  color: #6a2bbd !important;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #d3b4fc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #6a2bbd;
 }
 
 @keyframes App-logo-spin {
@@ -174,7 +174,7 @@
 
   .button-selected {
     padding: 7px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-overflow: none;
   }
 }
@@ -188,7 +188,7 @@
 
   .button-selected {
     padding: 7px;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-overflow: none;
   }
 }

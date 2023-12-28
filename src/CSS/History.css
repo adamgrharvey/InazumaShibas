@@ -1,5 +1,6 @@
 .AyaPic {
   width: fit-content;
+  border-radius: 10px;
 }
 
 .history-split {
@@ -18,13 +19,13 @@
 }
 
 .ckc-link {
-  color: #702cc4;
+  color: #6a2bbd;
 }
 
 .history-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.8rem;
-  color: #702cc4;
+  color: #6a2bbd;
   height: auto;
 }
 
@@ -34,6 +35,7 @@
   align-items: start;
   text-align: start;
   font-size: 1.4rem;
+  color: #3e0583;
 }
 
 .AboutText {
