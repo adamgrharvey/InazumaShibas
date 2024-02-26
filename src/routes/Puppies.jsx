@@ -63,8 +63,7 @@ export default function Puppies(props) {
           </div>
           <div className="ml-3 mr-3">
             <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
-            <p className='mt-4 text-lg'>Aya had her 2nd litter on May 7th, 2023. Two puppies; a girl and a boy. </p>
-            <p className="mt-4 pl-12 pr-12 text-lg">We are currently no puppies available. If interested in future litters, Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
+            <p className="mt-4 pl-12 pr-12 text-lg">Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
 
           </div>
         </div>
