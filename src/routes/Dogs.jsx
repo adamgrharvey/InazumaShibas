@@ -1,92 +1,100 @@
-import '../CSS/Dogs.css';
-import ayaprofile from "../images/aya-profile-crop.webp";
-import kukiprofile from "../images/kuki/kukiprofile.jpg"
-import aya1 from "../images/aya1.webp"
-import aya2 from "../images/aya2.webp"
-import aya3 from "../images/aya3.webp"
-import aya4 from "../images/aya4.webp"
-import a1 from "../images/aya/1.webp"
-import a2 from "../images/aya/2.webp"
-import a3 from "../images/aya/3.webp"
-import a4 from "../images/aya/4.webp"
-import a5 from "../images/aya/5.webp"
-import a6 from "../images/aya/6.webp"
-import LightningBolt from '../components/LightningBolt';
-import React, { useRef, useState, useEffect } from "react";
+import '../CSS/Dogs.css'
+import ayaprofile from '../images/aya-profile-crop.webp'
+import kukiprofile from '../images/kuki/kukiprofile.jpg'
+import aya1 from '../images/aya1.webp'
+import aya2 from '../images/aya2.webp'
+import aya3 from '../images/aya3.webp'
+import aya4 from '../images/aya4.webp'
+import a1 from '../images/aya/1.webp'
+import a2 from '../images/aya/2.webp'
+import a3 from '../images/aya/3.webp'
+import a4 from '../images/aya/4.webp'
+import a5 from '../images/aya/5.webp'
+import a6 from '../images/aya/6.webp'
+import LightningBolt from '../components/LightningBolt'
+import React, { useRef, useState, useEffect } from 'react'
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/thumbs";
-import "swiper/css/zoom";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/thumbs'
+import 'swiper/css/zoom'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 // import required modules
-import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from "swiper";
+import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from 'swiper'
 
 export default function Dogs(props) {
-
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
   function importAll(r) {
-    return r.keys().map(r);
+    return r.keys().map(r)
   }
 
-  const kukiImages = importAll(require.context('../images/kuki', false, /\.(png|jpe?g|svg)$/));
+  const kukiImages = importAll(require.context('../images/kuki', false, /\.(png|jpe?g|svg)$/))
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [count, setCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true)
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
-    // Loading function to load data or 
+    // Loading function to load data or
     // fake it using setTimeout;
     const loadData = async () => {
-      setCount(0);
+      setCount(0)
       // Wait for two second
       const timer = setInterval(() => {
-        setCount(prev => prev + 1);
+        setCount((prev) => prev + 1)
       }, 45)
 
-      await new Promise((r) => setTimeout(r, 2200));
+      await new Promise((r) => setTimeout(r, 2200))
       // Toggle loading state
-      setIsLoading(false);
-      clearInterval(timer);
-    };
+      setIsLoading(false)
+      clearInterval(timer)
+    }
 
-    loadData();
+    loadData()
   }, [])
 
   if (isLoading) {
-    return (
-      <LightningBolt />
-    )
+    return <LightningBolt />
   } else {
-
     return (
       <>
-        <div className='flex flex-row mt-6 pictext fadeInPage'>
-          <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
-            <img className='rounded-full AyaProfile' src={ayaprofile}></img>
+        <div className="flex flex-row mt-6 pictext fadeInPage">
+          <div className="max-h-max ml-3 mr-3 flex items-center justify-center">
+            <img className="rounded-full AyaProfile" src={ayaprofile}></img>
           </div>
           <div className="ml-3 mr-3">
-            <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
-            <p className="mt-4 text-lg">Aya is a very elegant and spunky girl. She loves learning new tricks and is eager to impress, however her greatest joy in life is to argue back and to make sure her opinion is heard. She is our foundation bitch and we can't wait to see what she holds for us in the future.</p>
-            <p className="mt-4 text-lg">Aya finished her Championship in only one month of showing with group placings. She went on to attain Grand Champion status at 18 months old.</p>
-            <p className='mt-4 text-lg'>The co-owner of this beautiful girl, Susan Norris-Jones from Sunojo kennels, has been breeding Shiba's since 1985. We are extremely fortunate to have Susan as our mentor in this remarkable breed.</p>
-            <p className='mt-4 text-lg underline font-bold'>Health Testing</p>
-            <p className='text-lg'>Hips: B / Good</p>
-            <p className='text-lg'>Patella: Grade 0</p>
-            <p className='text-lg'>Eyes: Clear</p>
+            <p className="font-bold text-2xl">Aya (GCh Sunojo's Kaika Suru Ayame)</p>
+            <p className="mt-4 text-lg">
+              Aya is a very elegant and spunky girl. She loves learning new tricks and is eager to
+              impress, however her greatest joy in life is to argue back and to make sure her
+              opinion is heard. She is our foundation bitch and we can't wait to see what she holds
+              for us in the future.
+            </p>
+            <p className="mt-4 text-lg">
+              Aya finished her Championship in only one month of showing with group placings. She
+              went on to attain Grand Champion status at 18 months old.
+            </p>
+            <p className="mt-4 text-lg">
+              The co-owner of this beautiful girl, Susan Norris-Jones from Sunojo kennels, has been
+              breeding Shiba's since 1985. We are extremely fortunate to have Susan as our mentor in
+              this remarkable breed.
+            </p>
+            <p className="mt-4 text-lg underline font-bold">Health Testing</p>
+            <p className="text-lg">Hips: B / Good</p>
+            <p className="text-lg">Patella: Grade 0</p>
+            <p className="text-lg">Eyes: Clear</p>
           </div>
         </div>
-        <div className='mt-5 AyaPicSwiper fadeInPage'>
+        <div className="mt-5 AyaPicSwiper fadeInPage">
           <Swiper
             style={{
-              "--swiper-navigation-color": "#fff",
-              "--swiper-pagination-color": "#fff",
+              '--swiper-navigation-color': '#fff',
+              '--swiper-pagination-color': '#fff',
             }}
             loop={true}
             autoplay={{
@@ -96,7 +104,9 @@ export default function Dogs(props) {
             spaceBetween={10}
             slidesPerView={1}
             navigation={true}
-            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+            thumbs={{
+              swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+            }}
             modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
           >
@@ -156,20 +166,23 @@ export default function Dogs(props) {
           </Swiper>
         </div>
 
-        <div className='flex flex-row mt-6 pictext fadeInPage'>
-          <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
-            <img className='rounded-full AyaProfile' src={kukiprofile}></img>
+        <div className="flex flex-row mt-6 pictext fadeInPage">
+          <div className="max-h-max ml-3 mr-3 flex items-center justify-center">
+            <img className="rounded-full AyaProfile" src={kukiprofile}></img>
           </div>
           <div className="ml-3 mr-3">
-            <p className='font-bold text-2xl'>Kuki (Sunojo's Muscle Bunny Kuki)</p>
-            <p className='mt-4 text-lg'>Our youngest going to her first dog shows this year. She's energetic and mischievous. Looking forward to our future escapades with her!</p>
+            <p className="font-bold text-2xl">Kuki (Sunojo's Muscle Bunny Kuki)</p>
+            <p className="mt-4 text-lg">
+              Our youngest going to her first dog shows this year. She's energetic and mischievous.
+              Looking forward to our future escapades with her!
+            </p>
           </div>
         </div>
-        <div className='mt-5 AyaPicSwiper fadeInPage'>
+        <div className="mt-5 AyaPicSwiper fadeInPage">
           <Swiper
             style={{
-              "--swiper-navigation-color": "#fff",
-              "--swiper-pagination-color": "#fff",
+              '--swiper-navigation-color': '#fff',
+              '--swiper-pagination-color': '#fff',
             }}
             loop={true}
             autoplay={{
@@ -179,7 +192,9 @@ export default function Dogs(props) {
             spaceBetween={10}
             slidesPerView={1}
             navigation={true}
-            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+            thumbs={{
+              swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+            }}
             modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
           >
@@ -233,7 +248,7 @@ export default function Dogs(props) {
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper"
           >
-                        <SwiperSlide>
+            <SwiperSlide>
               <img src={kukiImages[0]} />
             </SwiperSlide>
             <SwiperSlide>

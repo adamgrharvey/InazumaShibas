@@ -1,78 +1,78 @@
-import '../CSS/Puppies.css';
-import AyaProfilePuppies from "../images/aya-profile-crop.webp";
+import '../CSS/Puppies.css'
+import AyaProfilePuppies from '../images/aya-profile-crop.webp'
 
-import React, { useRef, useState, useEffect } from "react";
-import { ContactUs } from '../components/ContactUs';
+import React, { useRef, useState, useEffect } from 'react'
+import { ContactUs } from '../components/ContactUs'
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/thumbs";
-import "swiper/css/zoom";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import LightningBolt from '../components/LightningBolt';
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/thumbs'
+import 'swiper/css/zoom'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import LightningBolt from '../components/LightningBolt'
 
 // import required modules
-import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from "swiper";
+import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from 'swiper'
 export default function Puppies(props) {
-
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
   function importAll(r) {
-    return r.keys().map(r);
+    return r.keys().map(r)
   }
 
-  const images = importAll(require.context('../images/puppies', false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context('../images/puppies', false, /\.(png|jpe?g|svg)$/))
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [count, setCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true)
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
-    // Loading function to load data or 
+    // Loading function to load data or
     // fake it using setTimeout;
     const loadData = async () => {
-      setCount(0);
+      setCount(0)
       // Wait for two second
       const timer = setInterval(() => {
-        setCount(prev => prev + 1);
+        setCount((prev) => prev + 1)
       }, 45)
 
-      await new Promise((r) => setTimeout(r, 2200));
+      await new Promise((r) => setTimeout(r, 2200))
       // Toggle loading state
-      setIsLoading(false);
-      clearInterval(timer);
-    };
+      setIsLoading(false)
+      clearInterval(timer)
+    }
 
-    loadData();
+    loadData()
   }, [])
 
   if (isLoading) {
-    return (
-      <LightningBolt />
-    )
+    return <LightningBolt />
   } else {
-
     return (
       <>
-        <div className='w-3/5 flex flex-row mt-6 pictext fadeInPage'>
-          <div className='max-h-max ml-3 mr-3 flex items-center justify-center'>
-            <img className='rounded-full AyaProfilePuppies' src={AyaProfilePuppies}></img>
+        <div className="w-3/5 flex flex-row mt-6 pictext fadeInPage">
+          <div className="max-h-max ml-3 mr-3 flex items-center justify-center">
+            <img className="rounded-full AyaProfilePuppies" src={AyaProfilePuppies}></img>
           </div>
           <div className="ml-3 mr-3">
-            <p className='font-bold text-2xl'>Aya (GCh Sunojo's Kaika Suru Ayame)</p>
+            <p className="font-bold text-2xl">Aya (GCh Sunojo's Kaika Suru Ayame)</p>
             <p className="mt-4 pl-12 pr-12 text-lg">We are expecting a litter in May 2024.</p>
-            <p className="mt-4 pl-12 pr-12 text-lg">Please contact us via the form below, or email us at <a href="mailto:inazumashibas@gmail.com"><b>inazumashibas@gmail.com</b></a> </p>
-
+            <p className="mt-4 pl-12 pr-12 text-lg">
+              Please contact us via the form below, or email us at{' '}
+              <a href="mailto:inazumashibas@gmail.com">
+                <b>inazumashibas@gmail.com</b>
+              </a>{' '}
+            </p>
           </div>
         </div>
-        <div className='mt-3 PuppyPicSwiper fadeInPage'>
+        <div className="mt-3 PuppyPicSwiper fadeInPage">
           <Swiper
             style={{
-              "--swiper-navigation-color": "#fff",
-              "--swiper-pagination-color": "#fff",
+              '--swiper-navigation-color': '#fff',
+              '--swiper-pagination-color': '#fff',
             }}
             loop={true}
             autoplay={{
@@ -82,7 +82,9 @@ export default function Puppies(props) {
             spaceBetween={10}
             slidesPerView={1}
             navigation={true}
-            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+            thumbs={{
+              swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+            }}
             modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
           >
@@ -173,7 +175,6 @@ export default function Puppies(props) {
             <SwiperSlide>
               <img src={images[28]} />
             </SwiperSlide>
-
           </Swiper>
           <Swiper
             onSwiper={setThumbsSwiper}
@@ -185,9 +186,7 @@ export default function Puppies(props) {
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper"
           >
-            {images.map((image) => {
-
-            })}
+            {images.map((image) => {})}
             <SwiperSlide>
               <img src={images[0]} />
             </SwiperSlide>
@@ -278,7 +277,6 @@ export default function Puppies(props) {
           </Swiper>
         </div>
         <ContactUs />
-
       </>
     )
   }

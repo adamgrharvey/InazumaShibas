@@ -1,11 +1,10 @@
-import '../CSS/LightningBolt.css';
+import '../CSS/LightningBolt.css'
 
 export default function LightningBolt(props) {
-
-
   return (
-    <div dangerouslySetInnerHTML={{
-      __html: `<div class="svg-container">
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<div class="svg-container">
   <div id="outerWrapper" class="ghosted">
     <svg class="lightning-container" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" viewBox="-243.6 360 41.6 73.7">
       <style>
@@ -16,7 +15,8 @@ export default function LightningBolt(props) {
       </defs>
       <clipPath id="SVGID_2_"><use xlink: href="#SVGID_1_" overflow="visible" /></clipPath><path id="path" class="st0 lightning stroke" d="M-202.9 360.3L-229 397h13l-26.2 36.5" /></svg>
   </div>
-</div>`}} />
-
+</div>`,
+      }}
+    />
   )
 }

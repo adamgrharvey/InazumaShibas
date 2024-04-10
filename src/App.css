@@ -87,7 +87,10 @@
   top: 0;
   text-align: left;
   z-index: 100;
-  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+  transition:
+    width 0.2s,
+    height 0.2s,
+    opacity 0.2s 0.2s;
 }
 
 .Links {
@@ -147,7 +150,6 @@
     font-size: 2.5rem;
     text-overflow: none;
   }
-
 }
 
 @media (min-width: 725px) and (max-width: 1123px) {
@@ -162,7 +164,6 @@
     font-size: 1.5rem;
     text-overflow: none;
   }
-
 }
 
 @media (min-width: 1124px) and (max-width: 1423px) {

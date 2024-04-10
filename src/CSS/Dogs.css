@@ -20,7 +20,11 @@ body {
 
 body {
   background: #d3b4fc;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -97,7 +101,6 @@ body {
   object-fit: cover;
   user-select: none; /* Standard syntax */
 }
-
 
 @media (max-width: 520px) {
   .AyaProfile {

@@ -41,7 +41,6 @@
 .AboutText {
   display: flex;
   flex-direction: row;
-
 }
 
 .AboutTextSection {
@@ -60,8 +59,6 @@
   transform: translateY(0);
 }
 
-
-
 @media (max-width: 520px) {
   .history-title {
     font-size: 3rem;
@@ -70,11 +67,9 @@
   .history-text {
     font-size: 1.1rem;
   }
-
 }
 
 @media (min-width: 521px) and (max-width: 820px) {
-
   .history-title {
     font-size: 3.3rem;
   }
@@ -84,8 +79,11 @@
   }
 }
 
-@media (min-width: 821px) and (max-width: 1123px) {}
+@media (min-width: 821px) and (max-width: 1123px) {
+}
 
-@media (min-width: 1124px) and (max-width: 1423px) {}
+@media (min-width: 1124px) and (max-width: 1423px) {
+}
 
-@media (min-width: 1424px) {}
+@media (min-width: 1424px) {
+}

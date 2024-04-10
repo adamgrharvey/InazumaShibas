@@ -1,23 +1,19 @@
 import '../CSS/Home.css'
 import { useState, useEffect } from 'react'
-import ayaabout from "../images/aya-about-PhotoRoom.png-PhotoRoom.png"
+import ayaabout from '../images/aya-about-PhotoRoom.png-PhotoRoom.png'
 import LightningBolt from '../components/LightningBolt'
 export default function Home() {
-
-
-
-
   const [isLoading, setIsLoading] = useState(true)
   const [, setCount] = useState(0)
 
   useEffect(() => {
-    // Loading function to load data or 
+    // Loading function to load data or
     // fake it using setTimeout;
     const loadData = async () => {
       setCount(0)
       // Wait for two second
       const timer = setInterval(() => {
-        setCount(prev => prev + 1)
+        setCount((prev) => prev + 1)
       }, 45)
 
       await new Promise((r) => setTimeout(r, 2200))
@@ -30,16 +26,16 @@ export default function Home() {
   }, [])
 
   if (isLoading) {
-    return (
-      <LightningBolt />
-    )
+    return <LightningBolt />
   } else {
-
     return (
       <>
-        <div className='Home fadeInPage'>
-          <p><div className='move1 Title1'>Welcome To </div><div className='move2 Title2' >Inazuma Shibas</div></p>
-          <img className='HomePhoto' alt='ayaabout' src={ayaabout}></img>
+        <div className="Home fadeInPage">
+          <p>
+            <div className="move1 Title1">Welcome To </div>
+            <div className="move2 Title2">Inazuma Shibas</div>
+          </p>
+          <img className="HomePhoto" alt="ayaabout" src={ayaabout}></img>
           {/*
           <div>
             <p>
