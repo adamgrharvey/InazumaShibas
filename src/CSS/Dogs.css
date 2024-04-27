@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  background: #d3b4fc;
+  background: #fff8f9;
   font-family:
     Helvetica Neue,
     Helvetica,
@@ -40,7 +40,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-color: #d3b4fc;
+  background-color: #fff8f9;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -53,11 +53,11 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 1px;
-  background-color: #d3b4fc;
+  background-color: #fff8f9;
 }
 
 body {
-  background: #d3b4fc;
+  background: #fff8f9;
   color: #ffffff;
 }
 
