@@ -59,7 +59,7 @@ export default function Puppies(props) {
           </div>
           <div className="ml-3 mr-3">
             <p className="font-bold text-2xl">Aya (GCh Sunojo's Kaika Suru Ayame)</p>
-            <p className="mt-4 pl-12 pr-12 text-lg">We are expecting a litter in May 2024.</p>
+            <p className="mt-4 pl-12 pr-12 text-lg">We are planning a litter for Winter 2024.</p>
             <p className="mt-4 pl-12 pr-12 text-lg">
               Please contact us via the form below, or email us at{' '}
               <a href="mailto:inazumashibas@gmail.com">
