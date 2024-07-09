@@ -27,25 +27,8 @@ export default function Puppies(props) {
   const images = importAll(require.context('../images/puppies', false, /\.(png|jpe?g|svg)$/))
 
   const [isLoading, setIsLoading] = useState(true)
-  const [count, setCount] = useState(0)
-
   useEffect(() => {
-    // Loading function to load data or
-    // fake it using setTimeout;
-    const loadData = async () => {
-      setCount(0)
-      // Wait for two second
-      const timer = setInterval(() => {
-        setCount((prev) => prev + 1)
-      }, 45)
-
-      await new Promise((r) => setTimeout(r, 2200))
-      // Toggle loading state
-      setIsLoading(false)
-      clearInterval(timer)
-    }
-
-    loadData()
+    setTimeout(() => setIsLoading(false), 2200)
   }, [])
 
   if (isLoading) {

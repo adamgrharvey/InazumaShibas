@@ -32,25 +32,8 @@ export default function Achievements() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
   const [isLoading, setIsLoading] = useState(true)
-  const [, setCount] = useState(0)
-
   useEffect(() => {
-    // Loading function to load data or
-    // fake it using setTimeout;
-    const loadData = async () => {
-      setCount(0)
-      // Wait for two second
-      const timer = setInterval(() => {
-        setCount((prev) => prev + 1)
-      }, 45)
-
-      await new Promise((r) => setTimeout(r, 2200))
-      // Toggle loading state
-      setIsLoading(false)
-      clearInterval(timer)
-    }
-
-    loadData()
+    setTimeout(() => setIsLoading(false), 2200)
   }, [])
 
   if (isLoading) {
