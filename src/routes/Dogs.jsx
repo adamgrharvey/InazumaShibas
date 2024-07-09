@@ -28,7 +28,8 @@ import 'swiper/css/pagination'
 import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from 'swiper'
 
 export default function Dogs(props) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null)
+  const [AyaThumbsSwiper, setAyaThumbsSwiper] = useState(null)
+  const [kukiThumbsSwiper, setKukiThumbsSwiper] = useState(null)
 
   function importAll(r) {
     return r.keys().map(r)
@@ -105,7 +106,7 @@ export default function Dogs(props) {
             slidesPerView={1}
             navigation={true}
             thumbs={{
-              swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+              swiper: AyaThumbsSwiper && !AyaThumbsSwiper.destroyed ? AyaThumbsSwiper : null,
             }}
             modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
@@ -133,7 +134,7 @@ export default function Dogs(props) {
             </SwiperSlide>
           </Swiper>
           <Swiper
-            onSwiper={setThumbsSwiper}
+            onSwiper={setAyaThumbsSwiper}
             loop={true}
             spaceBetween={10}
             slidesPerView={6}
@@ -193,7 +194,7 @@ export default function Dogs(props) {
             slidesPerView={1}
             navigation={true}
             thumbs={{
-              swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+              swiper: kukiThumbsSwiper && !kukiThumbsSwiper.destroyed ? kukiThumbsSwiper : null,
             }}
             modules={[Autoplay, Pagination, FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
@@ -239,7 +240,7 @@ export default function Dogs(props) {
             </SwiperSlide>
           </Swiper>
           <Swiper
-            onSwiper={setThumbsSwiper}
+            onSwiper={setKukiThumbsSwiper}
             loop={true}
             spaceBetween={10}
             slidesPerView={6}
