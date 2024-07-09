@@ -20,7 +20,7 @@ export default function History(props) {
   } else {
     return (
       <>
-        <img className="ml-5 mr-5 AyaPic fadeInPage" src={aya_about}></img>
+        <img alt='aya-banner' className="ml-5 mr-5 AyaPic fadeInPage" src={aya_about}></img>
         <div className="HomeText fadeInPage flex flex-col">
           <p className="font-bold mb-4 underline history-title">Breed Description</p>
           <div className="history-text">
