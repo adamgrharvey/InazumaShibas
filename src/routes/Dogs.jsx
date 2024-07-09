@@ -45,7 +45,7 @@ export default function Dogs() {
       <>
         <div className="flex flex-row mt-6 pictext fadeInPage">
           <div className="max-h-max ml-3 mr-3 flex items-center justify-center">
-            <img className="rounded-full AyaProfile" src={ayaprofile}></img>
+            <img alt='ayaprofile' className="rounded-full AyaProfile" src={ayaprofile}></img>
           </div>
           <div className="ml-3 mr-3">
             <p className="font-bold text-2xl">Aya (GCh Sunojo's Kaika Suru Ayame)</p>
@@ -91,25 +91,25 @@ export default function Dogs() {
             className="mySwiper2"
           >
             <SwiperSlide>
-              <img src={a1} />
+              <img alt='aya-slide1' src={a1} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a2} />
+              <img alt='aya-slide2' src={a2} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a3} />
+              <img alt='aya-slide3' src={a3} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
+              <img alt='aya-slide4' src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a4} />
+              <img alt='aya-slide5' src={a4} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a5} />
+              <img alt='aya-slide6' src={a5} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a6} />
+              <img alt='aya-slide7' src={a6} />
             </SwiperSlide>
           </Swiper>
           <Swiper
@@ -123,32 +123,32 @@ export default function Dogs() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={a1} />
+              <img alt='mini-aya-slide1' src={a1} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a2} />
+              <img alt='mini-aya-slide2' src={a2} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a3} />
+              <img alt='mini-aya-slide3' src={a3} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
+              <img alt='mini-aya-slide4' src="https://img1.wsimg.com/isteam/ip/44dbcf5e-8c9c-4211-84cb-7a2f02434cac/116080281_10161246883479616_374632999273232078.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:719,h:959" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a4} />
+              <img alt='mini-aya-slide5' src={a4} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a5} />
+              <img alt='mini-aya-slide6' src={a5} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={a6} />
+              <img alt='mini-aya-slide7' src={a6} />
             </SwiperSlide>
           </Swiper>
         </div>
 
         <div className="flex flex-row mt-6 pictext fadeInPage">
           <div className="max-h-max ml-3 mr-3 flex items-center justify-center">
-            <img className="rounded-full AyaProfile" src={kukiprofile}></img>
+            <img alt='kuki-profile'className="rounded-full AyaProfile" src={kukiprofile}></img>
           </div>
           <div className="ml-3 mr-3">
             <p className="font-bold text-2xl">Kuki (Sunojo's Muscle Bunny Kuki)</p>
@@ -179,43 +179,43 @@ export default function Dogs() {
             className="mySwiper2"
           >
             <SwiperSlide>
-              <img src={kukiImages[0]} />
+              <img alt='kuki-slide1' src={kukiImages[0]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[1]} />
+              <img alt='kuki-slide2' src={kukiImages[1]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[2]} />
+              <img alt='kuki-slide3' src={kukiImages[2]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[3]} />
+              <img alt='kuki-slide4' src={kukiImages[3]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[4]} />
+              <img alt='kuki-slide5' src={kukiImages[4]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[5]} />
+              <img alt='kuki-slide6' src={kukiImages[5]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[6]} />
+              <img alt='kuki-slide7' src={kukiImages[6]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[7]} />
+              <img alt='kuki-slide8' src={kukiImages[7]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[8]} />
+              <img alt='kuki-slide9' src={kukiImages[8]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[9]} />
+              <img alt='kuki-slide10' src={kukiImages[9]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[10]} />
+              <img alt='kuki-slide11' src={kukiImages[10]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[11]} />
+              <img alt='kuki-slide12' src={kukiImages[11]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[12]} />
+              <img alt='kuki-slide13' src={kukiImages[12]} />
             </SwiperSlide>
           </Swiper>
           <Swiper
@@ -229,43 +229,43 @@ export default function Dogs() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={kukiImages[0]} />
+              <img alt='mini-kuki-slide1' src={kukiImages[0]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[1]} />
+              <img alt='mini-kuki-slide2' src={kukiImages[1]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[2]} />
+              <img alt='mini-kuki-slide3' src={kukiImages[2]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[3]} />
+              <img alt='mini-kuki-slide4' src={kukiImages[3]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[4]} />
+              <img alt='mini-kuki-slide5' src={kukiImages[4]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[5]} />
+              <img alt='mini-kuki-slide6' src={kukiImages[5]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[6]} />
+              <img alt='mini-kuki-slide7' src={kukiImages[6]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[7]} />
+              <img alt='mini-kuki-slide8' src={kukiImages[7]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[8]} />
+              <img alt='mini-kuki-slide9' src={kukiImages[8]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[9]} />
+              <img alt='mini-kuki-slide10' src={kukiImages[9]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[10]} />
+              <img alt='mini-kuki-slide11' src={kukiImages[10]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[11]} />
+              <img alt='mini-kuki-slide12' src={kukiImages[11]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={kukiImages[12]} />
+              <img alt='mini-kuki-slide13' src={kukiImages[12]} />
             </SwiperSlide>
           </Swiper>
         </div>
