@@ -1,7 +1,7 @@
 import '../CSS/Puppies.css'
 import AyaProfilePuppies from '../images/aya-profile-crop.webp'
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { ContactUs } from '../components/ContactUs'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -16,7 +16,7 @@ import 'swiper/css/pagination'
 import LightningBolt from '../components/LightningBolt'
 
 // import required modules
-import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from 'swiper'
+import { Autoplay, FreeMode, Pagination, Navigation, Thumbs } from 'swiper'
 export default function Puppies(props) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
@@ -169,7 +169,6 @@ export default function Puppies(props) {
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper"
           >
-            {images.map((image) => {})}
             <SwiperSlide>
               <img src={images[0]} />
             </SwiperSlide>
