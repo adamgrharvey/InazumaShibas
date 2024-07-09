@@ -38,7 +38,7 @@ export default function Puppies(props) {
       <>
         <div className="w-3/5 flex flex-row mt-6 pictext fadeInPage">
           <div className="max-h-max ml-3 mr-3 flex items-center justify-center">
-            <img className="rounded-full AyaProfilePuppies" src={AyaProfilePuppies}></img>
+            <img alt='aya-profile' className="rounded-full AyaProfilePuppies" src={AyaProfilePuppies}></img>
           </div>
           <div className="ml-3 mr-3">
             <p className="font-bold text-2xl">Aya (GCh Sunojo's Kaika Suru Ayame)</p>
@@ -72,91 +72,91 @@ export default function Puppies(props) {
             className="mySwiper2"
           >
             <SwiperSlide>
-              <img src={images[0]} />
+              <img alt='aya-puppies-slide1' src={images[0]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[1]} />
+              <img alt='aya-puppies-slide2' src={images[1]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[2]} />
+              <img alt='aya-puppies-slide3' src={images[2]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[3]} />
+              <img alt='aya-puppies-slide4' src={images[3]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[4]} />
+              <img alt='aya-puppies-slide5' src={images[4]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[5]} />
+              <img alt='aya-puppies-slide6' src={images[5]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[6]} />
+              <img alt='aya-puppies-slide7' src={images[6]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[7]} />
+              <img alt='aya-puppies-slide8' src={images[7]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[8]} />
+              <img alt='aya-puppies-slide9' src={images[8]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[9]} />
+              <img alt='aya-puppies-slide10' src={images[9]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[10]} />
+              <img alt='aya-puppies-slide11' src={images[10]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[11]} />
+              <img alt='aya-puppies-slide12' src={images[11]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[12]} />
+              <img alt='aya-puppies-slide13' src={images[12]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[13]} />
+              <img alt='aya-puppies-slide14' src={images[13]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[14]} />
+              <img alt='aya-puppies-slide15' src={images[14]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[15]} />
+              <img alt='aya-puppies-slide16' src={images[15]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[16]} />
+              <img alt='aya-puppies-slide17' src={images[16]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[17]} />
+              <img alt='aya-puppies-slide18' src={images[17]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[18]} />
+              <img alt='aya-puppies-slide19' src={images[18]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[19]} />
+              <img alt='aya-puppies-slide20' src={images[19]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[20]} />
+              <img alt='aya-puppies-slide21' src={images[20]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[21]} />
+              <img alt='aya-puppies-slide22' src={images[21]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[22]} />
+              <img alt='aya-puppies-slide23' src={images[22]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[23]} />
+              <img alt='aya-puppies-slide24' src={images[23]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[24]} />
+              <img alt='aya-puppies-slide25' src={images[24]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[25]} />
+              <img alt='aya-puppies-slide26' src={images[25]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[26]} />
+              <img alt='aya-puppies-slide27' src={images[26]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[27]} />
+              <img alt='aya-puppies-slide28' src={images[27]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[28]} />
+              <img alt='aya-puppies-slide29' src={images[28]} />
             </SwiperSlide>
           </Swiper>
           <Swiper
@@ -170,91 +170,91 @@ export default function Puppies(props) {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={images[0]} />
+              <img alt='mini-aya-puppies-slide1' src={images[0]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[1]} />
+              <img alt='mini-aya-puppies-slide2' src={images[1]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[2]} />
+              <img alt='mini-aya-puppies-slide3' src={images[2]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[3]} />
+              <img alt='mini-aya-puppies-slide4' src={images[3]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[4]} />
+              <img alt='mini-aya-puppies-slide5' src={images[4]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[5]} />
+              <img alt='mini-aya-puppies-slide6' src={images[5]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[6]} />
+              <img alt='mini-aya-puppies-slide7' src={images[6]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[7]} />
+              <img alt='mini-aya-puppies-slide8' src={images[7]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[8]} />
+              <img alt='mini-aya-puppies-slide9' src={images[8]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[9]} />
+              <img alt='mini-aya-puppies-slide10' src={images[9]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[10]} />
+              <img alt='mini-aya-puppies-slide11' src={images[10]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[11]} />
+              <img alt='mini-aya-puppies-slide12' src={images[11]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[12]} />
+              <img alt='mini-aya-puppies-slide13' src={images[12]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[13]} />
+              <img alt='mini-mini-aya-puppies-slide14' src={images[13]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[14]} />
+              <img alt='mini-aya-puppies-slide15' src={images[14]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[15]} />
+              <img alt='mini-aya-puppies-slide16' src={images[15]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[16]} />
+              <img alt='mini-aya-puppies-slide17' src={images[16]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[17]} />
+              <img alt='mini-aya-puppies-slide18' src={images[17]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[18]} />
+              <img alt='mini-aya-puppies-slide19' src={images[18]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[19]} />
+              <img alt='mini-aya-puppies-slide20' src={images[19]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[20]} />
+              <img alt='mini-aya-puppies-slide21' src={images[20]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[21]} />
+              <img alt='mini-aya-puppies-slide22' src={images[21]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[22]} />
+              <img alt='mini-aya-puppies-slide23' src={images[22]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[23]} />
+              <img alt='mini-aya-puppies-slide24' src={images[23]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[24]} />
+              <img alt='mini-aya-puppies-slide25' src={images[24]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[25]} />
+              <img alt='mini-aya-puppies-slide26' src={images[25]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[26]} />
+              <img alt='mini-aya-puppies-slide27' src={images[26]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[27]} />
+              <img alt='mini-aya-puppies-slide28' src={images[27]} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={images[28]} />
+              <img alt='mini-aya-puppies-slide29' src={images[28]} />
             </SwiperSlide>
           </Swiper>
         </div>
