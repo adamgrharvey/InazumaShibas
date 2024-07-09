@@ -1,10 +1,6 @@
 import '../CSS/Dogs.css'
 import ayaprofile from '../images/aya-profile-crop.webp'
 import kukiprofile from '../images/kuki/kukiprofile.jpg'
-import aya1 from '../images/aya1.webp'
-import aya2 from '../images/aya2.webp'
-import aya3 from '../images/aya3.webp'
-import aya4 from '../images/aya4.webp'
 import a1 from '../images/aya/1.webp'
 import a2 from '../images/aya/2.webp'
 import a3 from '../images/aya/3.webp'
@@ -12,7 +8,7 @@ import a4 from '../images/aya/4.webp'
 import a5 from '../images/aya/5.webp'
 import a6 from '../images/aya/6.webp'
 import LightningBolt from '../components/LightningBolt'
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -25,9 +21,9 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 // import required modules
-import { Autoplay, FreeMode, Pagination, Zoom, Navigation, Thumbs } from 'swiper'
+import { Autoplay, FreeMode, Pagination, Navigation, Thumbs } from 'swiper'
 
-export default function Dogs(props) {
+export default function Dogs() {
   const [AyaThumbsSwiper, setAyaThumbsSwiper] = useState(null)
   const [kukiThumbsSwiper, setKukiThumbsSwiper] = useState(null)
 
