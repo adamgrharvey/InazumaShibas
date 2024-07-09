@@ -19,6 +19,7 @@ export default function ButtonRow(props) {
   })
 
   // deprecated, but updates DOM on URL load, keeping in.
+  // eslint-disable-next-line
   const [selected, setSelected] = useState(0)
 
   if (!isDesktop) {
